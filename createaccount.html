@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Create Account</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styleATM.css') }}">
+</head>
+
+<body>
+    <h1>Create Account</h1>
+
+    <form action="/createaccount" method="POST">
+		<table id = "tblinput">
+
+			<tr>
+				<td> <h2>User Information</h2></td>
+				
+			</tr>
+			<tr>
+				<td>
+					<table id = "tblinfo">
+				
+						<tr>
+							
+							<td><label id="lblfname">First Name </label><br>
+								<input type="text" name="txtfname" required>
+							</td>
+							<td><label id="lblfname">Last Name </label><br>
+								<input type="text" name="txtlname" required></td>
+								
+							<td><label id="lblmidin">Middle Initial </label><br>
+								<input type="text" name="txtmidin"></td>
+							</td>
+						</tr>
+						<tr>
+							<td><label id="lbldob">Birth Date </label><br>
+								<input type="Date" name="birth" required></td>
+							<td><label id="lblssn">SSN </label><br>
+								<input type="text" name="txtssn" required><br></td>
+						</tr>
+							
+						<tr>
+							<td><label id="lblpass">Password </label><br>
+								<input type="password" name="txtpass" required></td>
+								
+							<td><label id="lblconfpass">Confirm Password </label><br>
+								<input type="password" name="txtconfpass" required></td>
+						</tr>
+						<tr>
+							<td>
+								<button type="submit" id="btncreateacc" name="btncreateacc">Create account</button>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+		</table>
+        
+    </form>
+
+</body>
+</html>
+		
